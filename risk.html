@@ -30,16 +30,16 @@
         qn.style.visibility="visible";
       }
 
-      var show=true;
+      var show=[true, true, true, true, true, true];
       function show_more_desgins(m){
         getp=document.getElementById("more_desgins"+m);
-        if (show){
+        if (show[m]){
           getp.style.display="block";
-          show=!show;
+          show[m]=false;
         }
         else{
           getp.style.display="none";
-          show=!show;
+          show[m]=true;
         }
       }
 
@@ -67,34 +67,66 @@
 
 
           <div class="display" id="risks">
-            <div class="more_risks" >Smartphone Risk</div>
-            <div>sth</div><br>
+
+            <div class="more_risks" >Smartphone Risks</div>
+            <div>Information systems privacy is to protect individual user against the system’s misuse or failure to protect the user’s the private data
+              In light of the frequent usage of smartphones, leakage of personal data increases rapidly.<br>
+              It is thus vital that user privacy is given sufficient consideration when discussing smartphone security.
+              In the following, users’ smartphone security, namely password setting and anti-virus software installation are analysed.
+            </div><br>
+
             <div class="more_risks" >GPS</div>
-            <div>sth</div><br>
+            <div>Most of all current smartphones support Assisted GPS. More smartphones will support GLONASS (e.g., iPhone 4S and Samsung GALAXY Note)<br>
+              Your friends or strangers can stalk you base on our check-in locations. In other words, you say “Please Stalk Me”.
+              Some apps may contains malicious program that store your GPS information frequently. These data may be used to analysis your travel pattern, who you have met. These information may be used for erratic purpose.
+            </div><br>
+
             <div class="more_risks" >Wifi Hotspot</div>
-            <div>sth</div><br>
+            <div>Portable hotspot-an ad hoc wireless access point that is created by a dedicated hardware device or a smartphone feature
+              that shares the phone’s cellular data have become an indispensable feature for the public-university students, business travelers and others who want internet connectivity on-the-go on multiple devices.<br>
+              If one’s Wifi-Network is unsecured, one’s network traffic and confidential information are easily tracked down and accessed by everyone. Confidential information includes email login information. It has come to the attention that majority of them did not set passwords for their wi-fi hotspot.
+              Without a secured wifi hotspot, one’s data sent over the network are in all likelihood being unencrypted by malicious users such as identity theft.
+            </div><br>
+
             <div class="more_risks" >Apps</div>
-            <div>sth</div><br>
+            <div>Most of apps require accesses of personal information,
+              which might result in exposure of those items to malicious users.
+              They might take this opportunity to implant various malicious programs
+              and track down users’ actions. <br>For example, illegal programs embed on
+              users’ phones to steal their photos and contacts, worse still, spy on users
+              through hacking user’s mobile camera. Therefore,
+              it is vital to be aware of own privacy during apps installation.
+            </div><br>
+
             <div class="more_risks" >Google Drive</div>
-            <div>sth</div><br>
+            <div>sth
+            </div><br>
+
             <div class="more_risks" >SMS w/URL: Malvertisement</div>
-            <div>sth</div>
+            <div>The malware could be anything, from a Trojan virus to ransomware
+                  is an serious issue and has been tripled since 2013.<br>
+                  Malicious downloading and hacking started once the user click on the URL.
+                  Some users think if they leave the site immediately,
+                  malware will stop. However, malicious code is undetected and
+                  hacks continues that the user has no idea what is going to be hacked.
+            </div>
+
           </div>
 
           <div class="display" id="designs" >
             <ol>
-              <li onclick="show_more_desgins(0)">Get the latest updates from your mobile manufacturer
+              <li onclick="show_more_desgins(0)">Get the latest updates from your mobile manufacturer<br>
                 <p class="more_desgins" id="more_desgins0">In most of the situation, the newly discovered bugs or loopholes can be modified by the latest software update. Therefore, always updating the software to date is important for E-privacy.
                 </p><br></li>
-              <li onclick="show_more_desgins(1)">Install anti-virus program
+              <li onclick="show_more_desgins(1)">Install anti-virus program<br>
                 <p class="more_desgins" id="more_desgins1">2</p><br></li>
-              <li onclick="show_more_desgins(2)">Do not download apps from unknown source
+              <li onclick="show_more_desgins(2)">Do not download apps from unknown source<br>
                 <p class="more_desgins" id="more_desgins2">Users can download apps from google play store and apple store. However, some of the apps can not be downloaded in these store. This may due to the app is inappropriate, contain virus,etc. Some of the user may download it from other source. Also, some of them may be free in other source but not free in google play and apple store. However, downloading apps from source other than google play store and apple store increase the chances of infected by virus. Also, it may create loophole for hackers to steal users information.
                 </p><br></li>
-              <li onclick="show_more_desgins(3)">Check the authorization required before downloading apps
+              <li onclick="show_more_desgins(3)">Check the authorization required before downloading apps<br>
                 <p class="more_desgins" id="more_desgins3">When users download apps from google play store or apple store, they need to agree the app to access some authority such as Photos/Media/Files,etc. Users need to press the accept button in order to download and use that app. Accepting the app to access your Photos/Media/Files means that the app can store, modify your photos, media and files. Therefore, users should think whether the app requires the authorization to work or the app is just trying to steal your information.
                 </p><br></li>
-              <li onclick="show_more_desgins(4)">Stay alert to abnormal phone situation and reset phone  if needed
+              <li onclick="show_more_desgins(4)">Stay alert to abnormal phone situation and reset phone  if needed<br>
                 <p class="more_desgins" id="more_desgins4">Abnormal phone situation such as rapid reduce of speed and batteries may indicated some apps are running. This apps may contains virus and hacker is stealing information  from your phone. Hence, users should consider resetting the phone if above situation occurs in their phone.
                 </p><br></li>
               <li onclick="show_more_desgins(5)">Do not connect public wi-fi (unsecured wi-fi) if possible
